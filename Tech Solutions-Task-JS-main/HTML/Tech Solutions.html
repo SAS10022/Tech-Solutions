@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Overlord employee directory">
+    <title>Overlord | Employee Directory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700&display=swap"
+      rel="stylesheet"
+>
+    <link rel="stylesheet" href="../CSS/styling.css">
+  </head>
+
+  <body class="directory-page-body">
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="site-logo" href="overlord.html" data-company-name>Overlord</a>
+      </div>
+    </header>
+
+    <main class="directory-page populated-page">
+      <section class="summary-grid" aria-label="Company overview">
+        <article class="summary-card">
+          <p class="summary-label">Total employees</p>
+          <strong class="summary-value" data-total-employees>0</strong>
+          <p class="summary-note"><span class="summary-dot"></span>Across <span data-department-total>4</span> departments</p>
+        </article>
+        <article class="summary-card">
+          <p class="summary-label">Average salary</p>
+          <strong class="summary-value"><span data-average-salary>$0</span> <small>/mo</small></strong>
+        </article>
+        <article class="summary-card">
+          <p class="summary-label">Highest paid</p>
+          <strong class="summary-person" data-highest-paid-name>Loading...</strong>
+          <p class="summary-highlight"><strong data-highest-paid-salary>$0</strong></p>
+        </article>
+        <article class="summary-card">
+          <p class="summary-label">Active employees</p>
+          <p class="summary-value"><strong data-active-employees>0</strong><span class="summary-online" data-online-count>/ 0 online</span></p>
+          <p class="summary-note"><span class="summary-dot"></span></p>
+          <p class="visually-hidden" data-inactive-check></p>
+        </article>
+      </section>
+
+      <section class="directory-controls" aria-label="Directory filters">
+        <div class="search-control">
+          <span class="control-icon" aria-hidden="true">⌕</span>
+          <label class="visually-hidden" for="employee-search">Search employees</label>
+          <input id="employee-search" type="search" placeholder="Search by name...">
+        </div>
+        <label class="select-control">
+          <span class="visually-hidden">Department</span>
+          <select id="department-filter">
+            <option value="All Departments">All Departments</option>
+          </select>
+        </label>
+        <button id="javascript-filter" class="filter-button" type="button">
+          <span class="filter-code">JS</span><span>Knows JavaScript</span>
+        </button>
+        <button id="salary-sort" class="filter-button" type="button"><span class="sort-arrow" aria-hidden="true">↕</span><span data-sort-label>Sort by salary (desc)</span></button>
+        <label class="checkbox-control">
+          <input id="active-only" type="checkbox">
+          <span>Active only</span>
+        </label>
+      </section>
+
+      <section class="directory-meta" aria-label="Directory categories">
+        <nav class="department-tabs" aria-label="Filter by department">
+          <button class="department-tab is-active" data-department="All Departments" type="button">All <small>(<span data-total-employees>0</span>)</small></button>
+          <button class="department-tab" data-department="Frontend" type="button">Frontend <small><span data-department-count-for="Frontend">(0)</span></small></button>
+          <button class="department-tab" data-department="Backend" type="button">Backend <small><span data-department-count-for="Backend">(0)</span></small></button>
+          <button class="department-tab" data-department="UI/UX" type="button">UI/UX <small><span data-department-count-for="UI/UX">(0)</span></small></button>
+          <button class="department-tab" data-department="QA" type="button">QA <small><span data-department-count-for="QA">(0)</span></small></button>
+        </nav>
+        <p class="result-summary">Showing <strong data-visible-count>0</strong> of <span data-record-count>0</span> records</p>
+      </section>
+
+      <section class="employee-grid" aria-label="Employees" data-employee-grid></section>
+    </main>
+
+    <footer class="site-footer"><span>© 2026 Tech Solutions All rights reserved.</span></footer>
+    <script src="../JAVASCRIPT/mainscript.js"></script>
+  </body>
+</html>

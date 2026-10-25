@@ -1,0 +1,91 @@
+{
+  "company": "Tech Solutions",
+  "employees": [
+    {
+      "id": 1,
+      "name": "Ahmed Hassan",
+      "department": "Frontend",
+      "position": "Senior Developer",
+      "salary": 25000,
+      "age": 29,
+      "isActive": true,
+      "skills": ["JavaScript", "React", "CSS"]
+    },
+    {
+      "id": 2,
+      "name": "Mariam Ali",
+      "department": "Backend",
+      "position": "Backend Developer",
+      "salary": 22000,
+      "age": 27,
+      "isActive": true,
+      "skills": ["Node.js", "SQL", "Express"]
+    },
+    {
+      "id": 3,
+      "name": "Omar Mohamed",
+      "department": "Frontend",
+      "position": "Junior Developer",
+      "salary": 12000,
+      "age": 24,
+      "isActive": true,
+      "skills": ["JavaScript", "HTML", "CSS"]
+    },
+    {
+      "id": 4,
+      "name": "Sara Ibrahim",
+      "department": "UI/UX",
+      "position": "UI Designer",
+      "salary": 18000,
+      "age": 26,
+      "isActive": false,
+      "skills": ["Figma", "CSS", "Design"]
+    },
+    {
+      "id": 5,
+      "name": "Youssef Adel",
+      "department": "Backend",
+      "position": "Senior Developer",
+      "salary": 30000,
+      "age": 32,
+      "isActive": true,
+      "skills": ["Node.js", "MongoDB", "SQL"]
+    },
+    {
+      "id": 6,
+      "name": "Nour Samir",
+      "department": "Frontend",
+      "position": "Mid-Level Developer",
+      "salary": 20000,
+      "age": 28,
+      "isActive": false,
+      "skills": ["React", "TypeScript", "CSS"]
+    },
+    {
+      "id": 7,
+      "name": "Khaled Mostafa",
+      "department": "QA",
+      "position": "QA Engineer",
+      "salary": 16000,
+      "age": 30,
+      "isActive": true,
+      "skills": ["Testing", "JavaScript", "Selenium"]
+    },
+    {
+      "id": 8,
+      "name": "Laila Tarek",
+      "department": "UI/UX",
+      "position": "Senior Designer",
+      "salary": 26000,
+      "age": 31,
+      "isActive": true,
+      "skills": ["Figma", "Design", "Prototyping"]
+    }
+  ],
+  "departmentDescriptions": {
+    "Frontend": "User interfaces and web experiences",
+    "Backend": "Servers, APIs, and databases",
+    "UI/UX": "Design and user experience",
+    "QA": "Quality assurance and testing"
+  }
+}
